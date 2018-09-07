@@ -68,6 +68,8 @@ public class Gps {
 	}
 	
 	public void reset() {
-		
+		GpsPosition resetPosition = route.get(route.size()-1);
+		route.clear();
+		route.add(resetPosition);
 	}
 }
