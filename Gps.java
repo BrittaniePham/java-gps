@@ -5,7 +5,6 @@ import java.util.Random;
 
 public class Gps {
 	
-//	private ArrayList<GpsPosition> route;
 	private ArrayList<GpsPosition> route = new ArrayList<>();
 
 	public Gps(GpsPosition position) {
@@ -31,7 +30,7 @@ public class Gps {
 	
 	public GpsPosition position() {
 		GpsPosition currentPosition = route.get(route.size()-1);
-		return currentPosition; //TODO
+		return currentPosition;
 	}
 	
 	public double distanceTraveled() {
@@ -39,7 +38,7 @@ public class Gps {
 		for (int i = 1; i < route.size(); i++){
 			total += distance(route.get(i-1), route.get(i));
         }
-		return total; //TODO
+		return total;
 	}
 	
 	private double distance(GpsPosition from, GpsPosition to) {

@@ -10,9 +10,6 @@ public class GpsPosition {
 		if (latitude < -90 || latitude > 90 || longitude < -180 || longitude > 180){
 			throw new IllegalArgumentException("Invalid latitude and/or longitude");
 		}
-//		else if ( longitude < 0.0 ) {
-//			throw new IllegalArgumentException("Invalid latitude and/or longitude");
-//		}
 		this.latitude = latitude;
 		this.longitude = longitude;
 		this.elevation = elevation;
